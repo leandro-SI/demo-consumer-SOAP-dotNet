@@ -10,6 +10,14 @@ namespace ConsumerSOAP
     {
         static void Main(string[] args)
         {
+            Banguat.TipoCambio cliente = new Banguat.TipoCambio();
+
+            var resultado = cliente.TipoCambioDia();
+
+            Console.WriteLine(resultado.CambioDolar.First().fecha);
+            Console.WriteLine(resultado.CambioDolar.First().referencia);
+
+            Console.ReadKey();
         }
     }
 }
